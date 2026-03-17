@@ -1,11 +1,16 @@
 package br.com.fiap.entity;
 
+import br.com.fiap.enums.Equipamentos;
+
+import java.util.ArrayList;
+
 public class Funcionario {
     String nome;
     double horasTrabalhadas;
     double valorHoras;
     double salario;
     boolean ativo;
+    ArrayList<Equipamentos> inventario;
 
     public Funcionario(String nome, double valorHoras) {
         this.nome = nome;

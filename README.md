@@ -21,7 +21,7 @@ src/
     │       ├── entity/ (Entidades: Funcionario, Ceo, Senior, RecursoHumano)
     │       ├── enums/ (Equipamentos)
     │       ├── exception/ (Exceções customizadas)
-    │       └── view/ (Interfaces/Views)
+    │       └── view/ (Mains/Testes)
     └── resources/
         └── META-INF/persistence.xml (Configuração JPA)
 ```

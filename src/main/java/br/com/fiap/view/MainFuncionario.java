@@ -15,7 +15,7 @@ public class MainFuncionario {
 
     public static void main(String[] args) {
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("oracle");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("CLIENTE_ORACLE");
         EntityManager em = emf.createEntityManager();
         FuncionarioDao dao = new FuncionarioDaoImpl(em);
 

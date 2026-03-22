@@ -1,7 +1,7 @@
 # CP1-Java
 
 ## Descrição
-Projeto da primeira avaliação contínua (CP1) da disciplina de Java da FIAP. Sistema de gerenciamento de funcionários e recursos humanos utilizando JPA/Hibernate com banco Oracle. Inclui entidades como `Funcionario`, `Ceo`, `Senior` e `RecursoHumano`, com funcionalidades como cálculo de salário, inventário de equipamentos e mais.
+Projeto da primeira avaliação (CP1) da disciplina de Java Advanced. Sistema de gerenciamento de funcionários utilizando JPA/Hibernate com banco Oracle. Inclui entidades como `Funcionario`, `Ceo`, `Senior` e `RecursoHumano`, com funcionalidades como cálculo de salário, inventário de equipamentos e mais.
 
 ## Tecnologias
 - **Linguagem**: Java
@@ -12,18 +12,71 @@ Projeto da primeira avaliação contínua (CP1) da disciplina de Java da FIAP. S
 
 ## Estrutura do Projeto
 ```
-src/
-├── main/
-    ├── java/
-    │   └── br/com/fiap/
-    │       ├── annotation/ (Anotações personalizadas)
-    │       ├── dao/ (DAOs)
-    │       ├── entity/ (Entidades: Funcionario, Ceo, Senior, RecursoHumano)
-    │       ├── enums/ (Equipamentos)
-    │       ├── exception/ (Exceções customizadas)
-    │       └── view/ (Mains/Testes)
-    └── resources/
-        └── META-INF/persistence.xml (Configuração JPA)
+CP1-Java
+│   .classpath
+│   .gitignore
+│   .project
+│   CP1-Java.iml
+│   Integrantes e GitHub.txt
+│   pom.xml
+│   README.md
+│
+├───.idea
+│       .gitignore
+│       compiler.xml
+│       jarRepositories.xml
+│       misc.xml
+│       vcs.xml
+│
+├───.settings
+│       org.eclipse.jdt.core.prefs
+│       org.eclipse.jpt.core.prefs
+│       org.eclipse.m2e.core.prefs
+│       org.eclipse.wst.common.project.facet.core.prefs.xml
+│       org.eclipse.wst.common.project.facet.core.xml
+│
+├───imagens-teste (Imagens da execução CRUD + resposta do banco)
+│       0 - reflection.png
+│       1 - cadastro de funcionario.png
+│       2 - buscar por id e buscar todos.png
+│       3 - atualizar funcionario.png
+│       4 - deletar funcionario.png
+│
+└───src
+    └───main
+        ├───java
+        │   └───br
+        │       └───com
+        │           └───fiap
+        │               ├───annotation
+        │               │       Descricao.java
+        │               │
+        │               ├───dao
+        │               │       FuncionarioDao.java
+        │               │       FuncionarioDaoImpl.java
+        │               │
+        │               ├───entity
+        │               │       Ceo.java
+        │               │       Funcionario.java
+        │               │       RecursoHumano.java
+        │               │       Senior.java
+        │               │
+        │               ├───enums
+        │               │       Equipamentos.java
+        │               │
+        │               ├───exception
+        │               │       CommitException.java
+        │               │       IdNaoEncontradoException.java
+        │               │
+        │               └───view (Mains/Testes)
+        │                       MainCeo.java
+        │                       MainFuncionario.java
+        │                       MainRecursoHumano.java
+        │                       MainSenior.java
+        │
+        └───resources
+            └───META-INF
+                    persistence.xml (Configuração JPA)
 ```
 
 ## Pré-requisitos
@@ -57,8 +110,7 @@ src/
 ## Funcionalidades
 - Cadastro e gerenciamento de funcionários
 - Cálculo de salário baseado em horas trabalhadas
-- Inventário de equipamentos (enum)
-- Hierarquia: Funcionario, Senior, Ceo, RecursoHumano
+- Inventário de equipamentos
 
 ## Integrantes
 - Rafael Kubagawa Ramos - RM565572
@@ -69,5 +121,4 @@ src/
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/Grupo-RVV/CP1-Java)
 
 ## Execução Local
-Para rodar testes ou a aplicação principal, use Maven ou sua IDE (Eclipse/IntelliJ).
-
+Para rodar testes ou a aplicação principal, use Maven e/ou sua IDE (Eclipse/IntelliJ).
